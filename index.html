@@ -7,72 +7,124 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="img1.jpg" alt="ma photo" height="150px" width="100px">
-        <div class="container">
+    <div class="container">  
+        <header class="section">
+            <div class="profil content">
+                <div class="imgP">
+                    <img src="img1.jpg" alt="ma photo" height="150px" width="100px">
+                </div>
+                <div>  
+                    <h1>RAYANE FOSSOH</h1>
+                    <p class="subtitle">Étudiant en Développement Web</p>
+                     <div class="ai-badge">✨ Assistant IA Disponible</div>
+                </div>
+                
+                
+            </div>
+            
            
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <div class="container">
+            
+                <nav>
+                    <ul>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <img id="profil" src="img1.jpg" alt="ma photo" height="150px" width="100px">
-            <h2>À propos de moi</h2>
-            <p>Je suis un étudiant en développement web passionné par la création de sites web interactifs et fonctionnels. J'ai acquis des compétences en HTML, CSS, JavaScript et j'ai travaillé sur plusieurs projets passionnants.</p>
-        </div>
-    </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>À propos de moi</h2><hr>
+                <p>Je suis un étudiant en développement web passionné par la création de sites web interactifs et fonctionnels. J'ai acquis des compétences en HTML, CSS, JavaScript et j'ai travaillé sur plusieurs projets passionnants.</p>
+            </div>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Mes Projets</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>Projet 1</h3>
-                    <p>Description du projet 1.</p>
-                </div>
-                <div class="project">
-                    <h3>Projet 2</h3>
-                    <p>Description du projet 2.</p>
-                </div>
-                <div class="project">
-                    <h3>Projet 3</h3>
-                    <p>Description du projet 3.</p>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Compétences</h2><hr>
+                <div class="skill-grip">
+                    <div class="skill">
+                        <h3>html 5 & css 3</h3>
+                        <div class="item1"></div>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <div class="item3"></div>
+                    </div>
+                    <div class="skill">
+                        <h3>php</h3>
+                        <div class="item4"></div>
+                    </div>
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <div class="item5"></div>
+                    </div>
+                    <div class="skill">
+                        <h3>java</h3>
+                        <div class="item6"></div>
+                    </div> 
                 </div>
             </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Mes Projets</h2><hr>
+                <div class="project-grid">
+                    <div class="project">
+                        <h3>Projet 1</h3>
+                        <p>Description du projet 1.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Projet 2</h3>
+                        <p>Description du projet 2.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Projet 3</h3>
+                        <p>Description du projet 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contactez-moi</h2><hr>
+                
+            </div>
+        </section>
+
+
+
+        <div class="ai-chat-container">
+        <button class="ai-button" onclick="toggleChat()">🤖</button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                💬 Assistant IA - Posez-moi vos questions !
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    Bonjour ! Je suis l'assistant IA de RAYANE. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et ses ambitions. Que souhaitez-vous savoir ?
+                </div>
+            </div>
+            <div class="loading" id="loading">⏳ L'IA réfléchit...</div>
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    class="chat-input" 
+                    id="chatInput" 
+                    placeholder="Posez votre question..."
+                    onkeypress="handleKeyPress(event)"
+                >
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contactez-moi</h2>
-            <form id="contact-form">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
-        </div>
-    </footer>
-
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>

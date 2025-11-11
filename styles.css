@@ -2,32 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #7d4ef3;
 }
-#profil{  
-    padding-left: 600px;
-
+.profil{  
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
+    background: #f9f9f9;
+    color: #5e6ae4;
+    padding-top: 10px;
+    min-height: 40vh;
 }
 
 header a {
-    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 header ul {
@@ -37,7 +36,7 @@ header ul {
 
 header li {
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
 }
 
 header #branding {
@@ -55,23 +54,59 @@ header .highlight, header .current a {
 }
 
 header a:hover {
-    color: #cccccc;
+    color: #121212;
 }
+hr{
+    background: #5e6ae4;
+    border-radius: 3px;
+    height: 4px;
 
+}
 .section {
+    background: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #e6e6e6;
+    border-bottom: #77aaff 3px solid;
+    border-radius: 20px;
+    margin: 20px;
 }
-
 .section h2 {
-    color: #333;
-    text-align: center;
+    color: #5e6ae4;
+    text-align: left;
 }
 
 .section p {
     color: #666;
     text-align: center;
     line-height: 1.6em;
+}
+.skill{
+    text-transform: uppercase;
+}
+.skill-grid{
+    display: grid;
+    
+   
+}
+.item1,.item2{
+    width: 50%;
+    height: 15px;
+    background:blue;
+    background-size: 70% 100%;
+    border-radius: 10px;
+}
+
+.item3{
+    width: 15%;
+    height: 15px;
+    background:red;
+    border-radius: 10px;
+}
+.item4,.item5,.item6{
+    width: 10%;
+    height: 15px;
+    background:red;
+    border-radius: 10px;
 }
 
 .project-grid {
@@ -97,43 +132,7 @@ header a:hover {
     line-height: 1.6em;
 }
 
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-#contact-form input, #contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #77aaff;
-    color: #fff;
-    border: 0;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
+.ai-button img{
+    background-image: url('img1.jpg');
+    background-size: contain;
 }
